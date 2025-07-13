@@ -50,7 +50,7 @@ export const getAllContacts = query({
         return u
           ? {
               id: u._id,
-              name: u.name,
+              name: u.name || "",
               email: u.email,
               imageUrl: u.imageUrl,
               type: "user",

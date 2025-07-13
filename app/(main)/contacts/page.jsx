@@ -81,7 +81,7 @@ export default function ContactsPage() {
                           <Avatar className="h-10 w-10">
                             <AvatarImage src={user.imageUrl} />
                             <AvatarFallback>
-                              {user.name.charAt(0)}
+                              {(user?.name?.charAt(0) || "?").toUpperCase()}
                             </AvatarFallback>
                           </Avatar>
                           <div>
