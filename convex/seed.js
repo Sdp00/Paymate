@@ -92,7 +92,7 @@ async function createdGroups(ctx, users) {
       ],
     },
     {
-      name: "Project Alpha",
+      name: "Project DevCompile",
       description: "Expenses for our project",
       createdBy: user3._id,
       members: [
@@ -305,7 +305,7 @@ async function createdGroupExpenses(ctx, users, groups) {
     },
   ];
 
-  // Project Alpha Expenses
+  // Project DevCompile Expenses
   const projectExpenses = [
     {
       description: "Domain purchase",
@@ -319,7 +319,7 @@ async function createdGroupExpenses(ctx, users, groups) {
         { userId: user2._id, amount: 400.0, paid: false },
         { userId: user3._id, amount: 400.0, paid: true },
       ],
-      groupId: groups[2]._id, // Project Alpha Group
+      groupId: groups[2]._id, // Project DevCompile Group
       createdBy: user3._id,
     },
     {
@@ -334,7 +334,7 @@ async function createdGroupExpenses(ctx, users, groups) {
         { userId: user2._id, amount: 1200.0, paid: false },
         { userId: user3._id, amount: 1200.0, paid: false },
       ],
-      groupId: groups[2]._id, // Project Alpha Group
+      groupId: groups[2]._id, // Project DevCompile Group
       createdBy: user1._id,
     },
     {
@@ -349,7 +349,7 @@ async function createdGroupExpenses(ctx, users, groups) {
         { userId: user2._id, amount: 1600.2, paid: true }, // 33.33%
         { userId: user3._id, amount: 1600.2, paid: false }, // 33.33%
       ],
-      groupId: groups[2]._id, // Project Alpha Group
+      groupId: groups[2]._id, // Project DevCompile Group
       createdBy: user2._id,
     },
   ];
