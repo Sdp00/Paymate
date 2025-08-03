@@ -180,7 +180,7 @@ export function SplitSelector({
 
           {type === "equal" && (
             <div className="text-right text-sm">
-              ${split.amount.toFixed(2)} ({split.percentage.toFixed(1)}%)
+              ₹{split.amount.toFixed(2)} ({split.percentage.toFixed(1)}%)
             </div>
           )}
 
@@ -248,7 +248,7 @@ export function SplitSelector({
           <span
             className={`font-medium ${!isAmountValid ? "text-amber-600" : ""}`}
           >
-            ${totalAmount.toFixed(2)}
+            ₹{totalAmount.toFixed(2)}
           </span>
           {type !== "equal" && (
             <span
